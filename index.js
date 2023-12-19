@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Define a route for the home page
 app.get('/', (req, res) => {
   // Render the 'index' template
-  res.render('index', { message: 'Hello, World!' });
+  res.send("<html> <head>server Response</head><body><h1> This page was render direcly from the server <p>Hello there welcome to my website</p></h1></body></html>");
 });
 
 // Start the server
