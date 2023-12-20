@@ -17,10 +17,10 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500).send('Error: ' + err.message);
 });
 
-// Middleware to handle 404 errors
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// // Middleware to handle 404 errors
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 // Start the server on port 3000
 const port = 3000;
